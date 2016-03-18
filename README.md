@@ -7,6 +7,6 @@ C# utils to
 
 Examples
 
-![Example on console with black background](http://lucato.it/demo_black_bg.png "Example on console with black background")
+![Example on console with black background](https://raw.githubusercontent.com/dluc/DL.PrettyText.NET/master/demo_black_bg.png "Example on console with black background")
 
-![Example on console with white background](http://lucato.it/demo_white_bg.png "Example on console with white background")
+![Example on console with white background](https://raw.githubusercontent.com/dluc/DL.PrettyText.NET/master/demo_white_bg.png "Example on console with white background")

@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("DL.PrettyText")]
+[assembly: AssemblyTitle("DL.PrettyText.NET")]
 [assembly: AssemblyDescription("Text manipulation, JSON formatting, Console colors etc.")]
 [assembly: AssemblyCompany("Devis Lucato")]
 [assembly: AssemblyCopyright("Devis Lucato")]
