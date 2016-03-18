@@ -1,8 +1,8 @@
 ﻿# DL.PrettyText
 
-C# function to 
+C# utils to 
 * Format JSON with colors
-* Change console colors
+* Change system console colors
 * Print colored text to the system console.
 
 Examples
