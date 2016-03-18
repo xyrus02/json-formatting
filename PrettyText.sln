@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{3E1DC950-0F83-42A4-A77D-DE50C4DAC81B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC4B8E5E-5C19-4896-A8AD-73509BB79F66}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		credits.txt = credits.txt
+		license.txt = license.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrettyText", "PrettyText\PrettyText.csproj", "{12C61201-6F73-44DB-8385-FA5D1F895A12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E1DC950-0F83-42A4-A77D-DE50C4DAC81B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E1DC950-0F83-42A4-A77D-DE50C4DAC81B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E1DC950-0F83-42A4-A77D-DE50C4DAC81B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E1DC950-0F83-42A4-A77D-DE50C4DAC81B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12C61201-6F73-44DB-8385-FA5D1F895A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12C61201-6F73-44DB-8385-FA5D1F895A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C61201-6F73-44DB-8385-FA5D1F895A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12C61201-6F73-44DB-8385-FA5D1F895A12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
