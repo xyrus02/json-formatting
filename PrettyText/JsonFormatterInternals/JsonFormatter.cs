@@ -1,13 +1,13 @@
-﻿namespace DL.PrettyText.JsonFormatter
+﻿namespace DL.PrettyText.JsonFormatterInternals
 {
     using System.Text;
-    using DL.PrettyText.JsonFormatter.ParsingStrategies;
+    using DL.PrettyText.JsonFormatterInternals.ParsingStrategies;
 
-    internal sealed class FormatterInternal
+    internal sealed class JsonFormatter
     {
         private readonly Context context;
 
-        internal FormatterInternal(ushort indent)
+        internal JsonFormatter(ushort indent)
         {
             this.context = new Context(indent);
             this.context.ClearStrategies();

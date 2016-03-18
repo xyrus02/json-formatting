@@ -10,7 +10,7 @@ namespace DL.PrettyText
         private const int StdOutputHandle = -11;
         private static readonly IntPtr InvalidHandleValue = new IntPtr(-1);
 
-        public static int RedefineScreenColors(Color foreground, Color background)
+        public static int ChangeScreenColors(Color foreground, Color background)
         {
             var irc = RedefineColor(ConsoleColor.Gray, foreground);
             return irc != 0 ? irc : RedefineColor(ConsoleColor.Black, background);

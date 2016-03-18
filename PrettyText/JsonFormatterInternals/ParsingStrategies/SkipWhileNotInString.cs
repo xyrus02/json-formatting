@@ -1,5 +1,7 @@
-﻿namespace DL.PrettyText.JsonFormatter.ParsingStrategies
+﻿namespace DL.PrettyText.JsonFormatterInternals.ParsingStrategies
 {
+    using DL.PrettyText.JsonFormatterInternals;
+
     internal sealed class SkipWhileNotInString : IStrategy
     {
         public SkipWhileNotInString(char selectionCharacter)

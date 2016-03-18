@@ -1,10 +1,10 @@
-﻿namespace DL.PrettyText.JsonFormatter.ParsingStrategies
+﻿namespace DL.PrettyText.JsonFormatterInternals.ParsingStrategies
 {
-    internal sealed class Comma : IStrategy
+    internal sealed class OpenSquareBracket : IStrategy
     {
         public char ForWhichCharacter
         {
-            get { return ','; }
+            get { return '['; }
         }
 
         public void Execute(Context context)
@@ -16,8 +16,8 @@
                 return;
             }
 
+            context.EnterArrayScope();
             context.BuildContextIndents();
-            context.IsProcessingVariableAssignment = false;
         }
     }
 }

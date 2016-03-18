@@ -2,9 +2,8 @@
 {
     using System.Text.RegularExpressions;
     using System.Web.Script.Serialization;
-    using DL.PrettyText.JsonFormatter;
 
-    public static class Formatter
+    public static class JsonFormatter
     {
         public static string Format(object obj, ushort indent = 4)
         {
@@ -18,7 +17,7 @@
                 return string.Empty;
             }
 
-            return new FormatterInternal(indent).Format(json);
+            return new JsonFormatterInternals.JsonFormatter(indent).Format(json);
         }
 
         public static string Minify(string json)

@@ -1,4 +1,4 @@
-﻿namespace DL.PrettyText.JsonFormatter
+﻿namespace DL.PrettyText.JsonFormatterInternals
 {
     using System.Collections.Generic;
 

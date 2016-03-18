@@ -51,21 +51,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleColors.cs" />
-    <Compile Include="JsonFormatter\State.cs" />
-    <Compile Include="JsonFormatter\ParsingStrategies\IStrategy.cs" />
-    <Compile Include="JsonFormatter\FormatterInternal.cs" />
-    <Compile Include="JsonFormatter\Context.cs" />
-    <Compile Include="JsonFormatter\ParsingStrategies\CloseBracket.cs" />
-    <Compile Include="JsonFormatter\ParsingStrategies\CloseSquareBracket.cs" />
-    <Compile Include="JsonFormatter\ParsingStrategies\ColonCharacter.cs" />
-    <Compile Include="JsonFormatter\ParsingStrategies\CommaCharacterStrategy.cs" />
-    <Compile Include="JsonFormatter\ParsingStrategies\DefaultCharacter.cs" />
-    <Compile Include="JsonFormatter\ParsingStrategies\DoubleQuote.cs" />
-    <Compile Include="JsonFormatter\ParsingStrategies\OpenBracket.cs" />
-    <Compile Include="JsonFormatter\ParsingStrategies\OpenSquareBracket.cs" />
-    <Compile Include="JsonFormatter\ParsingStrategies\SingleQuote.cs" />
-    <Compile Include="JsonFormatter\ParsingStrategies\SkipWhileNotInString.cs" />
-    <Compile Include="Formatter.cs" />
+    <Compile Include="JsonFormatterInternals\State.cs" />
+    <Compile Include="JsonFormatterInternals\ParsingStrategies\IStrategy.cs" />
+    <Compile Include="JsonFormatterInternals\JsonFormatter.cs" />
+    <Compile Include="JsonFormatterInternals\Context.cs" />
+    <Compile Include="JsonFormatterInternals\ParsingStrategies\CloseBracket.cs" />
+    <Compile Include="JsonFormatterInternals\ParsingStrategies\CloseSquareBracket.cs" />
+    <Compile Include="JsonFormatterInternals\ParsingStrategies\ColonCharacter.cs" />
+    <Compile Include="JsonFormatterInternals\ParsingStrategies\CommaCharacterStrategy.cs" />
+    <Compile Include="JsonFormatterInternals\ParsingStrategies\DefaultCharacter.cs" />
+    <Compile Include="JsonFormatterInternals\ParsingStrategies\DoubleQuote.cs" />
+    <Compile Include="JsonFormatterInternals\ParsingStrategies\OpenBracket.cs" />
+    <Compile Include="JsonFormatterInternals\ParsingStrategies\OpenSquareBracket.cs" />
+    <Compile Include="JsonFormatterInternals\ParsingStrategies\SingleQuote.cs" />
+    <Compile Include="JsonFormatterInternals\ParsingStrategies\SkipWhileNotInString.cs" />
+    <Compile Include="JsonFormatter.cs" />
     <Compile Include="Win32\NativeMethods.cs" />
     <Compile Include="Console.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,9 +74,6 @@
     <None Include="package.builder.json" />
     <None Include="packages.config" />
     <None Include="PrettyText.nuspec" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="license.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

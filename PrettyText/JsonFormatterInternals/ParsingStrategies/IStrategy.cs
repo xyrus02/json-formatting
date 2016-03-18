@@ -1,4 +1,4 @@
-﻿namespace DL.PrettyText.JsonFormatter.ParsingStrategies
+﻿namespace DL.PrettyText.JsonFormatterInternals.ParsingStrategies
 {
     internal interface IStrategy
     {

@@ -4,7 +4,6 @@
     using System.Drawing;
     using System.Text.RegularExpressions;
     using System.Web.Script.Serialization;
-    using DL.PrettyText.JsonFormatter;
 
     public static class Console
     {
@@ -17,17 +16,17 @@
         private const ConsoleColor HashesColor = ConsoleColor.DarkRed;
         private const string Escape = "◪";
 
-        public static void Write(string json, ushort indentation = 4, bool blackBg = true)
+        public static void PrintJson(string json, ushort indentation = 4, bool blackBg = true)
         {
-            Write(new JavaScriptSerializer().DeserializeObject(json), indentation, blackBg);
+            PrintJson(new JavaScriptSerializer().DeserializeObject(json), indentation, blackBg);
         }
 
-        public static void Write(object obj, ushort indentation = 4, bool blackBg = true)
+        public static void PrintJson(object obj, ushort indentation = 4, bool blackBg = true)
         {
             InitColors(blackBg);
 
             var json = new JavaScriptSerializer().Serialize(obj);
-            json = new FormatterInternal(indentation).Format(json);
+            json = new JsonFormatterInternals.JsonFormatter(indentation).Format(json);
 
             if (json.Contains(Escape))
             {
@@ -43,7 +42,7 @@
             {
                 var screenTextColor = Color.LightGray;
                 Color screenBackgroundColor = Color.Black;
-                ConsoleColors.RedefineScreenColors(screenTextColor, screenBackgroundColor);
+                ConsoleColors.ChangeScreenColors(screenTextColor, screenBackgroundColor);
 
                 ConsoleColors.RedefineColor(HashKeysColor, Color.DeepSkyBlue);
                 ConsoleColors.RedefineColor(StringsColor, Color.LightGreen);
@@ -57,7 +56,7 @@
             {
                 var screenTextColor = Color.DimGray;
                 var screenBackgroundColor = Color.White;
-                ConsoleColors.RedefineScreenColors(screenTextColor, screenBackgroundColor);
+                ConsoleColors.ChangeScreenColors(screenTextColor, screenBackgroundColor);
 
                 ConsoleColors.RedefineColor(HashKeysColor, Color.DarkBlue);
                 ConsoleColors.RedefineColor(StringsColor, Color.DarkRed);

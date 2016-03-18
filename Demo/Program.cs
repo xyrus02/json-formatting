@@ -16,10 +16,10 @@
             System.Console.WriteLine(JsonConvert.SerializeObject(obj, Formatting.Indented));
 
             System.Console.WriteLine("\n\n== Pretty Text format indent with 4 spaces ==\n");
-            System.Console.WriteLine(DL.PrettyText.Formatter.Format(obj, 4));
+            System.Console.WriteLine(DL.PrettyText.JsonFormatter.Format(obj, 4));
 
             System.Console.WriteLine("\n\n== Pretty Text custom colors ==\n");
-            DL.PrettyText.Console.Write(obj, 3, true);
+            DL.PrettyText.Console.PrintJson(obj, 3, true);
 
             System.Console.ReadLine();
         }

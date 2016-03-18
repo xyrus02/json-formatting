@@ -1,10 +1,10 @@
-﻿namespace DL.PrettyText.JsonFormatter.ParsingStrategies
+﻿namespace DL.PrettyText.JsonFormatterInternals.ParsingStrategies
 {
-    internal sealed class CloseSquareBracket : IStrategy
+    internal sealed class CloseBracket : IStrategy
     {
         public char ForWhichCharacter
         {
-            get { return ']'; }
+            get { return '}'; }
         }
 
         public void Execute(Context context)
@@ -15,6 +15,11 @@
                 return;
             }
 
+            PeformNonStringPrint(context);
+        }
+
+        private static void PeformNonStringPrint(Context context)
+        {
             context.CloseCurrentScope();
             context.BuildContextIndents();
             context.AppendCurrentChar();

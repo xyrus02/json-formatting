@@ -1,9 +1,9 @@
-﻿namespace DL.PrettyText.JsonFormatter
+﻿namespace DL.PrettyText.JsonFormatterInternals
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
-    using DL.PrettyText.JsonFormatter.ParsingStrategies;
+    using DL.PrettyText.JsonFormatterInternals.ParsingStrategies;
 
     internal sealed class Context
     {
