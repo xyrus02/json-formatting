@@ -1,9 +1,11 @@
-﻿namespace DL.PrettyText
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
+
+namespace DL.PrettyText
 {
     using System;
     using System.Drawing;
     using System.Text.RegularExpressions;
-    using System.Web.Script.Serialization;
 
     public static class Console
     {
@@ -15,17 +17,12 @@
         private const ConsoleColor ArraysColor = ConsoleColor.DarkCyan;
         private const ConsoleColor HashesColor = ConsoleColor.DarkRed;
         private const string Escape = "◪";
-
-        public static void PrintJson(string json, ushort indentation = 4, bool blackBg = true)
-        {
-            PrintJson(new JavaScriptSerializer().DeserializeObject(json), indentation, blackBg);
-        }
-
+        
         public static void PrintJson(object obj, ushort indentation = 4, bool blackBg = true)
         {
             InitColors(blackBg);
 
-            var json = new JavaScriptSerializer().Serialize(obj);
+            var json = JsonSerializer.Serialize(obj);
             json = new JsonFormatterInternals.JsonFormatter(indentation).Format(json);
 
             if (json.Contains(Escape))

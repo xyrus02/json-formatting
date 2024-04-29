@@ -1,87 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{12C61201-6F73-44DB-8385-FA5D1F895A12}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DL.PrettyText</RootNamespace>
-    <AssemblyName>DL.PrettyText</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <EnableNugetPack>true</EnableNugetPack>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <UseVSHostingProcess>false</UseVSHostingProcess>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>none</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <UseVSHostingProcess>false</UseVSHostingProcess>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Web.Extensions" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="ConsoleColors.cs" />
-    <Compile Include="JsonFormatterInternals\State.cs" />
-    <Compile Include="JsonFormatterInternals\ParsingStrategies\IStrategy.cs" />
-    <Compile Include="JsonFormatterInternals\JsonFormatter.cs" />
-    <Compile Include="JsonFormatterInternals\Context.cs" />
-    <Compile Include="JsonFormatterInternals\ParsingStrategies\CloseBracket.cs" />
-    <Compile Include="JsonFormatterInternals\ParsingStrategies\CloseSquareBracket.cs" />
-    <Compile Include="JsonFormatterInternals\ParsingStrategies\ColonCharacter.cs" />
-    <Compile Include="JsonFormatterInternals\ParsingStrategies\CommaCharacterStrategy.cs" />
-    <Compile Include="JsonFormatterInternals\ParsingStrategies\DefaultCharacter.cs" />
-    <Compile Include="JsonFormatterInternals\ParsingStrategies\DoubleQuote.cs" />
-    <Compile Include="JsonFormatterInternals\ParsingStrategies\OpenBracket.cs" />
-    <Compile Include="JsonFormatterInternals\ParsingStrategies\OpenSquareBracket.cs" />
-    <Compile Include="JsonFormatterInternals\ParsingStrategies\SingleQuote.cs" />
-    <Compile Include="JsonFormatterInternals\ParsingStrategies\SkipWhileNotInString.cs" />
-    <Compile Include="JsonFormatter.cs" />
-    <Compile Include="Win32\NativeMethods.cs" />
-    <Compile Include="Console.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="package.builder.json" />
-    <None Include="packages.config" />
-    <None Include="PrettyText.nuspec" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\NuGet.Package.Builder.1.0.9\build\NuGet.Package.Builder.targets" Condition="Exists('..\packages\NuGet.Package.Builder.1.0.9\build\NuGet.Package.Builder.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\NuGet.Package.Builder.1.0.9\build\NuGet.Package.Builder.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NuGet.Package.Builder.1.0.9\build\NuGet.Package.Builder.targets'))" />
-  </Target>
+
 </Project>

@@ -1,13 +1,14 @@
-﻿namespace DL.PrettyText
+﻿using System.Text.Json;
+
+namespace DL.PrettyText
 {
     using System.Text.RegularExpressions;
-    using System.Web.Script.Serialization;
 
     public static class JsonFormatter
     {
         public static string Format(object obj, ushort indent = 4)
         {
-            return Format(new JavaScriptSerializer().Serialize(obj), indent);
+            return Format(JsonSerializer.Serialize(obj), indent);
         }
 
         public static string Format(string json, ushort indent = 4)

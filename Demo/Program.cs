@@ -1,20 +1,21 @@
-﻿namespace Demo
-{
-    using System.Web.Script.Serialization;
-    using Newtonsoft.Json;
+﻿using System.Text.Json;
+using Newtonsoft.Json;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
+namespace Demo
+{
     public class Program
     {
         public static void Main(string[] args)
         {
             var obj = GetData();
 
-            System.Console.WriteLine("== System.Web.Script.Serialization ==\n");
-            System.Console.WriteLine(new JavaScriptSerializer().Serialize(obj));
-
-            System.Console.WriteLine("\n\n== JSON.Net format ==\n");
+            System.Console.WriteLine("== System.Text.Json ==\n");
+            System.Console.WriteLine(JsonSerializer.Serialize(obj, new JsonSerializerOptions{WriteIndented = true}));
+            
+            System.Console.WriteLine("== Newtonsoft JSON ==\n");
             System.Console.WriteLine(JsonConvert.SerializeObject(obj, Formatting.Indented));
-
+            
             System.Console.WriteLine("\n\n== Pretty Text format indent with 4 spaces ==\n");
             System.Console.WriteLine(DL.PrettyText.JsonFormatter.Format(obj, 4));
 
