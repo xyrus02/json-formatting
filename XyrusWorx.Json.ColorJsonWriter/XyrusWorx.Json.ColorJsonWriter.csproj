@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+
+    <PackageId>XyrusWorx.Json.ColorJsonWriter</PackageId>
+    <Authors>xyrus02</Authors>
+    <Company>Xyrusworx</Company>
+    <Description>An implementation of a Newtonsoft.Json serializer, which can write colorful JSON to the console</Description>
+
+    <Version>1.0.0.0</Version>
+    <PackageVersion>1.0.0</PackageVersion>
+    <InformationalVersion>$(PackageVersion)</InformationalVersion>
+
+    <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>PackageIcon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    
+    <AssemblyTitle>$(PackageId)</AssemblyTitle>
+    <AssemblyDescription>$(Description)</AssemblyDescription>
+    <AssemblyName>XyrusWorx.Json.ColorJsonWriter</AssemblyName>
+    <RootNamespace>XyrusWorx.Json</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

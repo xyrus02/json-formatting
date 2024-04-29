@@ -1,5 +1,0 @@
-Thanks to
-
-Mark Rogers and Matthew King for the JSON formatter
-	https://www.nuget.org/packages/JsonPrettyPrinter/
-	https://github.com/MatthewKing/JsonFormatterPlus

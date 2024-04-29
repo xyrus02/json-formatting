@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{3E1DC950-0F83-42A4-A77D-DE50C4DAC81B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XyrusWorx.Json.ColorJsonWriter.Demo", "XyrusWorx.Json.ColorJsonWriter.Demo\XyrusWorx.Json.ColorJsonWriter.Demo.csproj", "{3E1DC950-0F83-42A4-A77D-DE50C4DAC81B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC4B8E5E-5C19-4896-A8AD-73509BB79F66}"
 	ProjectSection(SolutionItems) = preProject
@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrettyText", "PrettyText\PrettyText.csproj", "{12C61201-6F73-44DB-8385-FA5D1F895A12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XyrusWorx.Json.ColorJsonWriter", "XyrusWorx.Json.ColorJsonWriter\XyrusWorx.Json.ColorJsonWriter.csproj", "{12C61201-6F73-44DB-8385-FA5D1F895A12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

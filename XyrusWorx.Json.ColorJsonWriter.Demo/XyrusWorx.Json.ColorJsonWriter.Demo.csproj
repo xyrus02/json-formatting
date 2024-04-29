@@ -6,10 +6,12 @@
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>XyrusWorx.Json</RootNamespace>
+    <AssemblyName>XyrusWorx.Json.ColorJsonWriter.Demo</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PrettyText\PrettyText.csproj" />
+    <ProjectReference Include="..\XyrusWorx.Json.ColorJsonWriter\XyrusWorx.Json.ColorJsonWriter.csproj" />
   </ItemGroup>
 
   <ItemGroup>
