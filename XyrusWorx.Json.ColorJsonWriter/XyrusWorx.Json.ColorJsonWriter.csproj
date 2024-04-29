@@ -28,4 +28,13 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\PackageIcon.png" Pack="True" PackagePath="\">
+      <Link>PackageIcon.png</Link>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\README.md" Pack="True" PackagePath="\">
+      <Link>README.md</Link>
+    </None>
+  </ItemGroup>
 </Project>
